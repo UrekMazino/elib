@@ -28,6 +28,9 @@
                             <option value="3">Borrowed Materials</option>
                             <option value="4">Inquiries</option>
                             <option value="5">CSF</option>
+                            <option value="6">Registered User</option>
+                            <option value="7">Publication Downloads</option>
+                            <option value="8">Publication Uploads</option>
                         </select>
                     </div>
                 </div>
@@ -211,6 +214,21 @@ $("#typeReport").change(function(){
             $("#date_title").text('Date of CSF');
             $("#filter_date").show();
             $("#filter-patron,#btnSubmit").show();
+        break;
+        case "6":
+            $("#date_title").text('Registered User');
+            $("#filter_date").show();
+            $("#filter-type,#btnSubmit").show();
+        break;
+        case "7":
+            $("#date_title").text('Publication Downloads');
+            $("#filter_date").show();
+            $("#filter-type,#btnSubmit").show();
+        break;
+        case "8":
+            $("#date_title").text('Publication Uploads');
+            $("#filter_date").show();
+            $("#filter-type,#btnSubmit").show();
         break;
     }
 })
